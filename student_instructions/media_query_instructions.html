@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Media Queries Assignment</title>
+</head>
+
+<body>
+<h1>Media Queries Assignment</h1>
+	<h2>Instructions</h2>
+<p>***NOTE: This assignment DOES NOT follow the textbook assignment. Carefully review the instructions below and follow along to complete your assignment.</p>
+<h3>Assignment Lecture</h3>
+<p>
+    <a class="" href="https://youtu.be/4J0DGbzI6dw" data-ytt-failcnt="2">https://youtu.be/4J0DGbzI6dw</a>
+</p>
+<p>&nbsp;</p>
+<h3>1: Download the starter files/Create a Folder</h3>
+<ul>
+    <li>Download the <a href="https://drive.google.com/open?id=1z4ytdbIdqkzHJUifbTdhYR2WyNdTcMiC">yoga7-starter.zip</a> file. This file is DIFFERENT from your yoga6 folder and has everything you need to complete this assignment.</li>
+    <li>Decompress the yoga7-starter.zip file and rename the folder to yoga7.</li>
+</ul>
+<h3>2: Review the home page layout and style.</h3>
+<h4>Open index.html in a browser with a web inspector and note the home page layout.</h4>
+<ul>
+    <li>There are two columns set up under the hero image</li>
+    <li>Each column has header text, an image, descriptive text and a button</li>
+    <li>There is a .row style set up. Each row is set to be 100% wide and clear all floats.&aring;</li>
+    <li>Images inside of rows are set to be 100% the width of their parent container.</li>
+    <li>There is a two column and three column layout set up.</li>
+    <li>The two-column setup uses the class col-half which creates a div that is 50% of its parent&rsquo;s div width and is floated left. Each .col-half has 40 px of padding on the left and right, which creates an 80px gutter.</li>
+    <li>The three-column setup uses the class col-third, which creates a div that is 1/3 (33.333%) of its parent&rsquo;s width and is floated left.</li>
+    <li>You may note that the leading and trailing col-third divs on this page contain a non-breaking space character (html code is "&amp;nbsp;"). This space is added to place content in the column div. Without content, the div would not have any width to create our first and last columns. We add this html code for a space so that we can give form to the column.</li>
+    <li>A .button style is set up to easily create clickable buttons. Note how these buttons have been added in a new row using the two-column layout. This has the effect of keeping the buttons aligned vertically even through the text above them is not.</li>
+</ul>
+<p>Note that there is an "after" pseudo class set up for the row class.</p>
+<pre>.row:after { <br />    content: "";<br />    display: table;<br />    clear: both; <br />} </pre>
+<p>All you really need to know about this is that this is a workaround to make your layout do what you expect. This setting fixes a zero-height problem that occurs to divs that contain only floated elements. If you want to know more, you can read about it on <a href="https://stackoverflow.com/questions/8554043/what-is-a-clearfix">stack-overflow</a>. The solution is typically called "clearfix" and usually gets it's own style but I've placed it into each row class for ease of use.&nbsp;</p>
+<h3>3: Update content in the index.html page</h3>
+<p>You'll be updating this page to show the building image and to add text and links to the buttons, as per the below image. <a href="https://i.imgur.com/mASwMdR.jpg" target="_blank" rel="noopener">View image in a new window</a>.</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/mASwMdR.jpg" alt="Home Page Layout" width="293" height="360" />
+        <figcaption>
+            <span style="font-size: 11pt;">The Path of Light Yoga Studio home page.&nbsp;</span>
+        </figcaption>
+    </figure>
+</div>
+<h4>Add the building photo to the page.</h4>
+<ul>
+    <li>Find the studio-exterior.jpg image file in the images folder</li>
+    <li>Add a new div element&nbsp;after the div containing the buttons and before the div containing the address</li>
+    <li>Give this div a class of "row"</li>
+    <li>Add an image tag in the row div and place the image into the page</li>
+    <li>Don&rsquo;t forget to add an alt tag.</li>
+</ul>
+<h4>Change the button text and add a link</h4>
+<ul>
+    <li>Change the left button to say &ldquo;See the Schedule&rdquo; and link it to the schedule.html page</li>
+    <li>Change the right button to say &ldquo;Learn About Classes&rdquo; and link it to the classes.html.</li>
+</ul>
+<h3>4: Change the content and layout of the classes.html page</h3>
+<p>We're going to change the Classes page to be a three-column format, as in the image below (<a href="https://i.imgur.com/WsREVIo.jpg" target="_blank" rel="noopener">view in new window</a>). We'll also add a button to give users something actionable to do after reading the descriptions.</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/WsREVIo.jpg" alt="Classes Page Layout" width="608" height="424" />
+        <figcaption>
+            <span style="font-size: 11pt;">The Path of Light Yoga Studio Classes page.</span>
+        </figcaption>
+    </figure>
+</div>
+<h4>Place the headings and descriptions into a three column format</h4>
+<p>Instead of using a Definition List on this page, change the page to use the three column setup as exampled on the home page. Use h3 for the terms and paragraphs for the text. Place each heading and definition into a div assigned to the col-third class.</p>
+<ul>
+    <li>Change the dl tag to a div tag and assign the class of "row"
+        <ul>
+            <li>Be sure to change the closing dl tag to a closing div tag</li>
+        </ul>
+    </li>
+    <li>Chance each dt and dd tag to h3 and p tags, respectively
+        <ul>
+            <li>Be sure to also update the closing tags appropriately</li>
+        </ul>
+    </li>
+    <li>Wrap each h3 and paragraph with a div and assign them all a class of &ldquo;col-third&rdquo; to create three columns on the page.</li>
+</ul>
+<h4>Add a row, columns and a button to the page</h4>
+<ul>
+    <li>Add a row and three col-third divs below the descriptions row</li>
+    <li>Add a non-breaking space into the first column div</li>
+    <li>Copy the code for a button from the home page and add it to the middle column.</li>
+    <li>For consistency's sake, add a non-breaking space to the right-hand div</li>
+</ul>
+<h4>Save the file</h4>
+<h3>5: Change the content and layout of the schedule.html page</h3>
+<p>On this page, we'll add two columns, as in the image below (<a href="https://i.imgur.com/gdytRye.jpg" target="_blank" rel="noopener">view image in new window</a>). We can keep the unordered lists for this task.</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/gdytRye.jpg" alt="Schedule Page Layout" width="585" height="396" />
+        <figcaption>
+            <span style="font-size: 11pt;">The Path of Light Yoga Studio Schedule page.</span>
+        </figcaption>
+    </figure>
+</div>
+<h4>Add half columns to the page and place the appropriate content in them.&nbsp;</h4>
+<ul>
+    <li>Open the schedule.html page in a text editor</li>
+    <li>Add a div with a class or "row" under the h2 element.&nbsp;</li>
+    <li>Inside the row, add two more divs and assign them both the class "col-half"</li>
+    <li>Cut and paste the each individual h3 and ul into its own respective column div.&nbsp;</li>
+</ul>
+<h4>Add a "view the gallery" button.</h4>
+<ul>
+    <li>Add a "view the gallery" button to the page in the same manner that you added the rows and buttons for the classes page.&nbsp;</li>
+</ul>
+<h4>Save the file</h4>
+<h3>6: Edit the site HTML to make it ready for for responsive layouts.</h3>
+<h4>Add a viewport meta tag</h4>
+<ul>
+    <li>Edit the home page code to configure a viewport meta tag that configures the width to the device-width and sets the initial-scale to 1.0. and save the file.&nbsp;</li>
+    <li>
+        <span style="font-size: 1rem;">Also add this meta tag to the classes.html and schedule.html pages </span>
+    </li>
+</ul>
+<h4>Configure a hyperlink for mobile phone use</h4>
+<p>
+    <span style="font-size: 1rem;">The home page displays a phone number in the contact information area. Wouldn&rsquo;t it be handy if a person using a smartphone could tap on the phone number to call the company? You can make that happen by using tel: in a hyperlink. Configure a hyperlink assigned to a class named mobile that contains the phone number as shown below:</span>
+</p>
+<pre>&lt;a class="mobile" href="tel: 888-555-555"&gt;888-555-555&lt;/a&gt;</pre>
+<p>But wait a minute, a telephone link could confuse those visiting the site with a desktop browser. Code another phone number directly after the hyperlink. Code a span element assigned to a class named desktop around the phone number as shown below:</p>
+<pre><span class="desktop">&lt;span class="desktop"&gt;888-555-5555&lt;/span&gt;</span></pre>
+<p>Don&rsquo;t worry about the two phone numbers that are now on the page. You&rsquo;ll configure CSS to show the appropriate phone number (with or without the telephone link) to your website visitors. Save the index.html file.</p>
+<p>&nbsp;</p>
+<h3>7: Modify the desktop CSS</h3>
+<p>The mobile phone link and footer email link doesn't look great in the default blue color so we'll add styles to change their color to match the rest of the page.</p>
+<ul>
+    <li>Add a styles for anchors to inherit the body text color.</li>
+    <li>This is best added towards the top of the CSS file, just after the body selector.</li>
+</ul>
+<pre>a { <br />    color: inherit;<br />} </pre>
+<p>Add the CSS below to hide the mobile version of the phone number in desktop view (the default display size)</p>
+<pre>.mobile { <br />&nbsp; &nbsp; display: none; <br />} <br /><br />.desktop { <br />&nbsp; &nbsp; display: inline;<br />}</pre>
+<h3>8: Add media queries and styles for tablet view.&nbsp;</h3>
+<p>The default view for our website is going to be the desktop view, which we've already completed so we don't need to add a media query for desktop. Instead, we'll add media queries to add breakpoints to modify our default layout if the screen is smaller than a normal desktop view.&nbsp;</p>
+<p>Below is an image of how the website will look on a tablet. Basically we'll just be setting the wrapper to 100% of the width of the device (<a href="https://i.imgur.com/TVTR6ce.jpg" target="_blank" rel="noopener">view image in new window</a>).</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/TVTR6ce.jpg" alt="Home Page Layout - Tablet" width="293"/>
+        <figcaption>
+            <span style="font-size: 11pt;">Tablet view of the home page.</span>
+        </figcaption>
+    </figure>
+</div>
+<h4>Code a Tablet Media Query</h4>
+<p>At the <strong>BOTTOM</strong> of your CSS file, code a media query for tablet device viewport size. A max width of 1024 will work well with our current layout.&nbsp;</p>
+<pre>@media only screen and (max-width: 1024px) {<br /><br />}</pre>
+<h4>Add the following styles inside of the media query to push the wrapper to the edges of the screen, but without going below 300 pixels wide.&nbsp;</h4>
+<pre>body {<br />   margin: 0;<br />   padding: 0;<br />}<br /><br />#wrapper {<br />  width: 100%;<br />  min-width: 300px;<br />  margin: 0;<br />  padding: 0;<br />}<br /><br /></pre>
+<h4>Then add some styles to display text better at this screen size.&nbsp;</h4>
+<pre>main {<br />   font-size: 1.15em;<br />}<br /><br />main h2 {<br />    font-size: 1.15em;<br />}</pre>
+<h3>9: Add media queries and styles for mobile view.&nbsp;</h3>
+<p>Below are images of how the website will look on mobile. We want a single column layout where each navigation element to display at full width and each of the columns will transition to display at 100% of the page width (open in new window: <a href="https://i.imgur.com/tIyPHKE.png">nav layout image</a> and <a href="https://i.imgur.com/jreIHpM.jpg">column layout image</a>).</p>
+<p>&nbsp;</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/tIyPHKE.png" alt="Home Page Navigation Layout - Mobile" width="290" height="519" />
+        <figcaption>
+            <span style="font-size: 11pt;">Mobile view of the home page navigation.</span>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="https://i.imgur.com/jreIHpM.jpg" alt="Home Page Single-Column Layout - Mobile" width="290" height="1026" />
+        <figcaption>
+            <span style="font-size: 11pt;">Mobile view of the home page columns.</span>
+        </figcaption>
+    </figure>
+</div>
+<h4>Code a Mobile Media Query</h4>
+<p><strong>BELOW</strong> the tablet media query, code a media query for mobile device viewport size. A max width of 768 pixels is typical.</p>
+<pre>@media only screen and (max-width: 768px) {<br /><br />}</pre>
+<h4>Add the following styles inside of your mobile media query:&nbsp;</h4>
+<h4>First, we'll give the header some extra padding and set the navigation to display correctly.</h4>
+<pre>header {<br />   padding: 20px;<br />}<br /><br />nav, nav ul, nav li {<br />   padding: 0;<br />   margin: 0;<br />}<br /><br />nav li {<br />   display: block;<br />}<br /><br />nav a {<br />   display: block;<br />   padding: .75em<br />}</pre>
+<h4>Remember those columns we set up? Let's modify those to display correctly in mobile.</h4>
+<p>In mobile, we'll typically only want to use a single-column layout. The styles below change each column to display at full width with a little bit of padding on the left and right and some vertical margin.&nbsp;</p>
+<pre>.col-half {<br />   float: none;<br />   width: 100%;<br />   padding-left: 10px;<br />   padding-right: 10px;<br />   margin-bottom: 28px;<br /> }<br /><br />.col-third {<br />   float: none;<br />   width: 100%;<br />   padding-left: 10px;<br />   padding-right: 10px;<br /> }</pre>
+<div>Finally, update the font sizes and code the desktop and mobile class selectors to hide or show the appropriate content.&nbsp;</div>
+<div>
+    <pre>h1 {<br />   font-size: 2em;<br /> }<br /><br />main h2 {<br />   font-size: 1.25em;<br />}<br />
+ .desktop {<br />   display: none;<br />}<br /><br />.mobile {<br />   display: inline;<br />}</pre>
+    <h4>10. Save your file and check that everything displays as expected.&nbsp;</h4>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms and Tables Assignment</title>
+</head>
+
+<body>
+<h1>Forms and Tables Assignment</h1>
+	<h2>Instructions</h2>
+<p>Remember the Path of Light Yoga Studio from Web II? Well we will be continuing some work on that website in our few exercises for Web III. I recommend downloading the starter .zip file here so that you can be sure you are starting off with a good website</p>
+<p>Don't worry about uploading these exercises to the server. You can if you want to, but you may also submit a .zip file of your website.&nbsp;</p>
+<p>For this first exercise, we will be completing two tasks:&nbsp;</p>
+<ol>
+    <li>Updating the schedule page to use tables for the schedule instead of unordered lists</li>
+    <li>Add a contact page and contact form to the website.</li>
+</ol>
+<h3>Video Instructions</h3>
+<p>Schedule page:</p>
+<p>
+    <a class="" href="https://www.youtube.com/watch?v=O5iR0jIlHdo&amp;list=PLVZetnSo7D6XIvBwaHpaKLuKnav8kSBzI" data-ytt-failcnt="3">https://www.youtube.com/watch?v=O5iR0jIlHdo&amp;list=PLVZetnSo7D6XIvBwaHpaKLuKnav8kSBzI</a>
+</p>
+<p>Contact page:&nbsp;</p>
+<p>
+    <a class="" href="https://youtu.be/9cHVgwtDCU8" data-ytt-failcnt="3">https://youtu.be/9cHVgwtDCU8</a>
+</p>
+<h3>Review the Starter Files</h3>
+<ul>
+    <li>Download the starter.zip file: <a class="instructure_file_link" title="w3ex1-starter.zip" href="https://scf.instructure.com/courses/14338/files/7572293/download?wrap=1" data-api-endpoint="https://scf.instructure.com/api/v1/courses/14338/files/7572293" data-api-returntype="File">w3ex1-starter.zip</a>
+    </li>
+    <li>Extract the file and rename the folder to w3ex1-lastname</li>
+    <li>Note that the current schedule page has two columns and uses unordered lists for the schedule information</li>
+    <li>Note that we will need to create a new contact page and add navigation links to all of the other site pages</li>
+</ul>
+<h3>Task 1: Update the Schedule Page</h3>
+<p>We will be updating this page to use tables instead of unordered lists for the schedule. Upon completing this task, the page should like like the below image.&nbsp;</p>
+<figure>
+    <img src="img/W3Ex1-schedule.png" alt="updated schedule page using tables" width="493" height="542"/>
+    <figcaption>
+        <span style="font-size: 10pt;">The updated schedule page</span>
+    </figcaption>
+</figure>
+<h4>A. Add the tables html</h4>
+<p>Open schedule.html in a text editor and note that the page is already organized into two columns using the "col-half" class. Y<span style="font-size: 1rem;">ou may want to keep the unordered lists in the the page until you are done coding the tables and information.&nbsp;</span>
+</p>
+<ul>
+    <li>
+        <span style="font-size: 1rem;">In the first half-column update the information to be in table format</span>
+        <ul>
+            <li>
+                <span style="font-size: 1rem;">Add a table opening and closing tag</span>
+                <ul>
+                    <li>Add a table &lt;caption&gt; with the Monday&mdash;Friday heading&nbsp;</li>
+                    <li>
+                        <span style="font-size: 1rem;">Add a row &lt;tr&gt; and table headers &lt;th&gt; for "Time" and "Class" table header elements</span>
+                    </li>
+                    <li>
+                        <span style="font-size: 1rem;">Add subsequent rows and cells &lt;td&gt; for each subsequent line of time and class information</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span style="font-size: 1rem;">In the second half-column copy and paste the table from the first column and update the information as appropriate</span>
+    </li>
+    <li>
+        <span style="font-size: 1rem;">Be sure to delete the old unordered lists from the html</span>
+    </li>
+</ul>
+<h4>
+    <span style="font-size: 14pt;">B. Add the table styles</span>
+</h4>
+<p>
+    <span style="font-size: 1rem;">We will now add the styles for the table so into yoga.css so that they tables displays appropriately. Don't forget that we need to check how the table displays in tablet &amp; mobile format too!</span>
+</p>
+<ul>
+    <li>Open the yoga.css file in a text editor</li>
+    <li>Make sure you are working in the desktop view section of the CSS, not in the media query sections</li>
+    <li>Add a CSS selector for .col-half table
+        <ul>
+            <li>We are working with how the tables display specifically in the col-half format format. Because we might want the styles to display differently in the col-third format we will be specific with our CSS selectors here.</li>
+            <li>Set the table width to 80%</li>
+            <li>Set the border to "solid 1px #3F2860</li>
+            <li>set border-collapse to collapse</li>
+            <li>set the left margin to auto</li>
+            <li>set the right margin to auto</li>
+            <li>set the bottom margin to 1em</li>
+        </ul>
+    </li>
+    <li>Add a CSS selector for ".col-half table caption" to make the text larger and give it some space
+        <ul>
+            <li>set the font-size to 1.25em;</li>
+            <li>set the bottom margin to 20px;</li>
+        </ul>
+    </li>
+    <li>Add a CSS selector for ".col-half table th" to style the header row
+        <ul>
+            <li>set the text color to #F8F8F6</li>
+            <li>set the background color to #3F2860</li>
+        </ul>
+    </li>
+    <li>Add a CSS selector for ".col-half table td" and set the padding to 10px</li>
+    <li>Add a CSS selector for ".col-half table td, .col-half table th"
+        <ul>
+            <li>set the padding to 2px on the top and bottom and 5px on the left and right</li>
+            <li>set the border to none</li>
+        </ul>
+    </li>
+    <li>Add the below CSS to align the right table header text to the left, align the left column cells' text to the left, and to give the odd rows some background shading</li>
+</ul>
+<pre>.col-half table th:last-of-type {<br />    text-align: left;<br />}<br /><br />.col-half table td:first-of-type {<br />    text-align: center;<br />}<br /><br />.col-half table tr:nth-of-type(odd) {<br />    background-color: #D9CEEA;<br />}</pre>
+<ul>
+    <li>
+        <span style="font-size: 1rem;">Save your CSS file</span>
+    </li>
+</ul>
+<p>
+    <span style="font-size: 1rem;">Now take a look at your work in a browser! Everything works well in desktop view, but note that in tablet and mobile views the text feels a bit large. Also there are some display port sizes where the tables don't display nicely, so we will add some basic mobile styling.&nbsp;</span>
+</p>
+<ul>
+    <li>
+        <span style="font-size: 1rem;">Add the following styles to the tablet media query (@media only screen and (max-width: 1024px))</span>
+    </li>
+    <li>
+        <span style="font-size: 1rem;">Add a CSS selector for ".col-half table"</span>
+        <ul>
+            <li>
+                <span style="font-size: 1rem;">set the width to 100%</span>
+            </li>
+            <li>
+                <span style="font-size: 1rem;">set the font-size to .9em;</span>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span style="font-size: 1rem;">Save your CSS file and review the site in a browser. The tables should now display cleanly in all viewport sizes.&nbsp;</span>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h3>Task 2: Add a Contact Page and Contact Form</h3>
+<p>Now we will add a contact page, a contact form and then style the form to display nicely on the page. Once we are done the page should look like the screenshot below.&nbsp;</p>
+<figure>
+    <img src="img/contact-page.png" alt="screenshot of the new contact page" width="569" height="624" />
+    <figcaption>
+        <span style="font-size: 10pt;">Screenshot of the new contact page.</span>
+    </figcaption>
+</figure>
+<h4>A. Add a contact page to the site</h4>
+<ul>
+    <li>Duplicate the schedule page and rename it to "contact.html"</li>
+    <li>Open up all of the site pages and add a link to the contact page in the navigation</li>
+    <li>Change the title in the head of the contact page to say "Contact" instead of "Schedule"</li>
+    <li>Save your pages</li>
+</ul>
+<h4>B. Update the new contact page</h4>
+<ul>
+    <li>Change the hero image to "yoga-contact-hero.jpg" (provided in the images folder of the starter .zip file above) and update the alt tag for the new image.</li>
+    <li>Change the h2 to say "Contact Path of Light Yoga Studio" and remove the descriptive paragraph under it.</li>
+    <li>Add the class "center-inline" to the h2 to center the text.</li>
+    <li>Update the left column information
+        <ul>
+            <li>Remove the table containing the Monday-Friday schedule</li>
+            <li>Add an h4 with the class of "center-inline" to say "Studio Location and Telephone"</li>
+            <li>Cut the text from the address row below and paste it into this column--do not copy the entire div/row tag, just the paragraph with the contact information.</li>
+        </ul>
+    </li>
+    <li>Update the right column information
+        <ul>
+            <li>Remove the table containing the Saturday &amp; Sunday schedule</li>
+            <li>Add an h4 with the class of "center-inline" to say "Contact Form"&nbsp;</li>
+            <li>Add a &lt;p&gt; with the class of "small-text" and "center-inline" to say "Required information is marked with an asterisk (*)."</li>
+        </ul>
+    </li>
+    <li>Add a form tag&nbsp;that uses the post method to submit through the textbook publisher's script:</li>
+</ul>
+<pre>&lt;form method="post" action="http://webdevbasics.net/scripts/yoga.php"&gt;<br /><br />&lt;/form&gt;</pre>
+<ul>
+    <li>Add the html code below to add form labels and input tags.
+        <ul>
+            <li>Note that each label/input pair is placed inside of a div with the clearfix class. This will help us tomore easily format the form when we get to styles.</li>
+            <li>Also note that each section of the form uses "required="required", which uses HTML5 Form Controls to dictate how the user can submit. This previously had to be done with JavaScript. &nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<pre>&lt;div class="clearfix"&gt;&lt;label for="myName"&gt;* Name: &lt;/label&gt;<br />   &lt;input type="text" id="myName" name="myName" required="required"&gt;&lt;/div&gt;<br />   &lt;div class="clearfix"&gt;&lt;label for="myEmail"&gt;* E-mail: &lt;/label&gt;<br />   &lt;input type="email" id="myEmail" name="myEmail" required="required"&gt;&lt;/div&gt;<br />   &lt;div class="clearfix"&gt;&lt;label for="myComments"&gt;* Comments: &lt;/label&gt;&lt;textarea id="myComments" name="myComments" rows="2" cols="15" required="required"&gt;&lt;/textarea&gt;&lt;/div&gt;<br /> &lt;input type="submit" class="clearfix" value="Send Now" id="mysubmit"&gt;</pre>
+<h4>C. Update the CSS to style how the form displays on the page</h4>
+<ul>
+    <li>Make sure you are working inside the normal desktop area of the CSS, not inside a media query section</li>
+    <li>Add a CSS selector for .small-text and set the font-size to .75em</li>
+    <li>Add a CSS selector for the form element
+        <ul>
+            <li>Set it to display as a block element</li>
+            <li>Set the width to 80%</li>
+            <li>set the left and right margins to auto</li>
+            <li>set the padding to 1em</li>
+        </ul>
+    </li>
+    <li>Add a CSS selector for the label element
+        <ul>
+            <li>Set the display to block</li>
+            <li>Set it to float left</li>
+            <li>Set the text alignment to the right</li>
+            <li>Set the font-weight to bold</li>
+            <li>Set the right padding to 10px</li>
+            <li>Set the font-size to .8em</li>
+            <li>Set the bottom margin to 10px</li>
+        </ul>
+    </li>
+    <li>Add a CSS selector for the "input" and "textarea" elements
+        <ul>
+            <li>
+                <div>Set them to clear both floats</div>
+            </li>
+            <li>
+                <div>Set them to display as a block element</div>
+            </li>
+            <li>
+                <div>Set them to float left</div>
+            </li>
+            <li>
+                <div>Set&nbsp;<span class="Apple-tab-span">&nbsp;</span>display: block</div>
+            </li>
+            <li>
+                <div>Set the bottom margin to 2em</div>
+            </li>
+            <li>
+                <div>Set the float: left</div>
+            </li>
+            <li>
+                <div>Set the padding to&nbsp;10px</div>
+            </li>
+            <li>
+                <div>Set the width to 100%</div>
+            </li>
+        </ul>
+    </li>
+    <li>**Submit Button Styles**
+        <ul>
+            <li>Add a CSS selector for the #mysubmit ID
+                <ul>
+                    <li>Set the width to 100%</li>
+                </ul>
+            </li>
+            <li>Find the &ldquo;.button a&rdquo; CSS selector and add the &ldquo;#mysubmit&rdquo; ID so that the form submit button looks similar to the other buttons on the site:&nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<pre>.button a, #mysubmit {<br />&nbsp; &nbsp; text-decoration: none;<br />&nbsp; &nbsp; text-transform: uppercase;<br />&nbsp; &nbsp; text-align: center;<br />&nbsp; &nbsp; color: #3F2860;<br />&nbsp; &nbsp; padding: 16px;<br />&nbsp; &nbsp; background-color: #9BC1C2;<br />&nbsp; &nbsp; font-size: .8em;<br />&nbsp; &nbsp; font-weight: bold;<br />}</pre>
+<p>Save your CSS file and verify the changes in a browser. Since we set the input and text area elements to clear the floats and a width of 100% they will appear below the labels and automatically fill their column no matter the viewport. Because of this fluid styling we don't need separate styles for tablet and mobile.&nbsp;</p>
+<h3>Compress your file into a .zip or upload it to the server and submit!</h3>
+	
+</body>
+</html>

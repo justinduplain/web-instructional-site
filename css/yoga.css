@@ -1,0 +1,440 @@
+* {
+	box-sizing: border-box;
+}
+
+body { 
+	background-color: #FFFFFF;
+    color: #3F2860;
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0;
+}
+
+a {
+	color: inherit; 
+}
+
+#wrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F8F8F6;
+	min-width: 1025px;
+	max-width: 1200px;
+}
+
+header, nav, main, footer { 
+	display: block;
+}
+
+.center-inline {
+	text-align: center;
+}
+
+header a  {
+	text-decoration: none;
+	color: inherit;
+}
+
+header a:hover {
+	opacity: .8;
+}
+
+header {
+	margin-top: 10px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+header img {
+	padding: 10px;
+	width: 125px;
+}
+
+h1 { 
+	font-weight: 100;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	margin-top: 0px;
+}
+
+nav {
+	width: 100%;
+	text-align: center;
+	font-size: 1.15em;
+	letter-spacing: .1em;
+}
+
+nav ul {
+	list-style-type: none;
+	background-color: #9BC1C2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	letter-spacing: .1em;
+	margin-right: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #3F2860;
+	padding: 20px;
+	background-color: #9BC1C2;
+}
+
+nav a:hover {
+	opacity: .85;
+	color: #473B57;
+	background-color: #92A2A2;
+}
+
+nav a:active {
+	color: #514760;
+	background-color: #9BC1C2;
+}
+
+main {
+	margin-bottom: 25px;
+}
+
+main h2, main h2, main h3, main h4, main h5, main h6, main p {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+main h2 {
+	font-size: 1.24em;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+main h3 {
+	font-size: 1.2em;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+main ul {
+	padding-left: 64px;
+}
+
+main dl {
+	padding-left: 48px;
+	padding-right: 24px;
+}
+
+dl {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+dt {
+	font-weight: 100;
+	font-size: 1.15em;
+	margin-bottom: 10px;
+	margin-top: 14px;
+}
+
+#hero {
+}
+
+#hero img {
+	width: 100%;
+}
+
+.studio {
+	font-style: italic; 
+}
+
+.floatleft {
+	float: left;
+	margin-right: 4em;
+}
+
+.clear {
+	clear: both;
+}
+
+.col-half table {
+	width: 80%;
+	border: solid 1px #3F2860;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+.col-half table caption {
+	font-size: 1.25em;
+	margin-bottom: 20px;
+}
+
+.col-half table th {
+	color: #F8F8F6;
+	background-color: #3F2860;
+}
+
+.col-half table td {
+	padding: 10px;
+}
+
+.col-half table td, .col-half table th {
+	padding: 2px 5px;
+	border: none;
+}
+
+.col-half table th:last-of-type {
+	text-align: left;
+}
+
+.col-half table td:first-of-type {
+	text-align: center;
+}
+
+.col-half table tr:nth-of-type(odd) {
+	background-color: #D9CEEA;
+}
+
+.small-text {
+    font-size: .75em;
+}
+
+form {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+label {
+	display: block;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 10px;
+	font-size: .8em;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	clear: both;
+	display: block;
+	float: left;
+	margin-bottom: 2em;
+	padding: 10px;
+	width: 100%;
+}
+
+footer {
+	clear: both;
+	background-color: #9BC1C2;
+	font-size: small;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+}
+
+.row {
+	clear: both;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-half {
+	width: 50%;
+	float: left;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.col-third {
+	width: 33.333%;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.button {
+	margin-top: 42px;
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+.button a, #mysubmit {
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #3F2860;
+	padding: 16px;
+	background-color: #9BC1C2;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+#mysubmit {
+	width: 100%;
+}
+
+.row img {
+	width: 100%;
+}
+
+.button a:hover {
+	opacity: .85;
+}
+
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: inline;
+}
+
+.lightbox {
+	/** lightbox does not display initially */
+	display: none;
+
+	/** Position and style of lightbox*/
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	
+	/** Placed the lightbox above all other content **/
+	z-index: 999;
+	
+	/** Adds a black background at 80% opacity **/
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	
+	/** Fits the expanded image to the viewport */
+	max-width: 70%;
+	margin-top: 2%;
+}
+
+.lightbox iframe {
+	margin-top: 15%;
+}
+
+/**This style uses the pseudoclass of target to show the lightbox when its ID is selected--when the thumnail is clicked/tapped **/
+
+.lightbox:target {
+	/** Shows lightbox on click **/
+	display: block;
+	transition: .5s ease;
+	
+	/** Remove default browser outline */
+	outline: none;
+}
+
+.thumb:hover {
+	opacity: .8;
+	transition: .1s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#wrapper {
+		width: 100%;
+		min-width: 300px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	main {
+		font-size: 1.15em;
+	}
+	
+	main h2 {
+		font-size: 1.15em;
+	}
+	
+	.col-half table {
+		width: 100%;
+		font-size: .9em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	header {
+		padding: 20px;
+	}
+	
+	nav, nav ul, nav li {
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav li {
+		display: block;
+	}
+	
+	nav a {
+		display: block;
+		padding: .75em
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	main h2 {
+		font-size: 1.25em;
+	}
+	
+	.col-half {
+		float: none;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 28px;
+	}
+	
+	.col-third {
+		float: none;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 55px;
+	}
+	
+	.desktop {
+		display: none;
+	}
+	
+	.mobile {
+		display: inline;
+	}
+	
+}

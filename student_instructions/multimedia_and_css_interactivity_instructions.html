@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Multimedia and CSS Interactivity Assignment</title>
+</head>
+
+<body>
+<h1>Multimedia and CSS Interactivity Assignment</h1>
+<p>***NOTE: This assignment DOES NOT follow the textbook assignment. Carefully review the instructions below and follow along to complete your assignment.</p>
+<h3>Assignment Lecture &amp; Instructions</h3>
+<p>
+    <a class="" href="https://youtu.be/IlCnbq-srT0" data-ytt-failcnt="2">https://youtu.be/IlCnbq-srT0</a>
+</p>
+<h3>Summary</h3>
+<p>
+    <span style="font-size: 1rem;">Instead of a contact page, our client has decided that they want an interactive gallery page that opens a lightbox image when you click on a thumbnail (see the screenshots below). We will be updating the site to support this change.&nbsp;</span>
+</p>
+<p>&nbsp;</p>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/84aQok0.jpg" alt="Gallery Page Layout" width="310"  />
+        <figcaption>The new gallery page.&nbsp;Note how the page does not have a hero image and that the h2 text is centered (<a href="https://i.imgur.com/84aQok0.jpg" target="_blank" rel="noopener">open in a new window</a>).</figcaption>
+    </figure>
+    <figure>
+        <img src="https://i.imgur.com/WB40Hnp.png" alt="Gallery page lightbox image" width="314" />
+        <figcaption>When clicking on a gallery image thumbnail, a larger image will open in a lightbox view.&nbsp;</figcaption>
+    </figure>
+</div>
+<h2>Tasks</h2>
+<h3>1) Create a yoga8 folder and download the unit files</h3>
+<ul>
+    <li>Duplicate your yoga7 folder and rename it to yoga8</li>
+    <li>Download the <a href="https://drive.google.com/open?id=1w7Py2Q9ErTmn2YgXYOLe2459PbVQtRr_" target="_blank" rel="noopener">yoga8-gallery.zip</a> file, which decompresses to a folder named "gallery" containing several thumbnails and full-size images</li>
+    <li>Add the gallery folder into your images folder, keeping the images in the gallery folder (ie. yoga8 &gt; images &gt; gallery)</li>
+</ul>
+<h3>2) Update the home page</h3>
+<ul>
+    <li>We'll need to update the navigation links on each page to link to the gallery page that we will create in step 4.&nbsp;</li>
+    <li>Update the navigation to change the "contact" link to say "gallery" and change the anchor tag link accordingly</li>
+    <li>Save the page and keep the file open</li>
+</ul>
+<h3>3) Update the schedule.html and classes.html pages</h3>
+<ul>
+    <li>
+        <span style="font-size: 14pt;">3.a.) Add contact information to the bottom of both pages</span>
+        <ul>
+            <li>
+                <span style="font-size: 1rem;">Update the navigation to change the "contact" link to say "gallery" and change the anchor tag link accordingly in both pages</span>
+            </li>
+            <li>
+                <span style="font-size: 1rem;">Update the button link on the schedule page to link to gallery.html</span>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span style="font-size: 14pt;">3.b.) Add contact information to the bottom of both pages</span>
+        <ul>
+            <li>
+                <span style="font-size: 1rem;">Since we will no longer have a dedicated contact page, we'll add the contact information from the home page to the bottom of the other pages.&nbsp;</span>
+            </li>
+            <li>
+                <span style="font-size: 1rem;">Copy the entire row containing the studio name, address and phone number from the index.html page</span>
+                <ul>
+                    <li>
+                        <span style="font-size: 1rem;">Be sure to select the opening div tag ( &lt;div class="row"&gt; ) and closing div tags before copying the code</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span style="font-size: 1rem;">Paste the row into the schedule page right before the closing &lt;/main&gt; tag and footer. This should result in a centered contact block above the footer</span>
+            </li>
+            <li>
+                <span style="font-size: 1rem;">Save the pages</span>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>4) Create a gallery.html page</h3>
+<p>In order to save time, we're going to use our updated classes page to create our gallery page.&nbsp;</p>
+<ul>
+    <li>Duplicate the classes.html page and rename it to gallery.html</li>
+    <li>Open the new page file</li>
+    <li>Update the title in the head accordingly</li>
+    <li>Remove the hero div and image
+        <ul>
+            <li>Locate the div with an id of "hero" and delete it, making sure to delete the enclosed image and div closing tag</li>
+        </ul>
+    </li>
+    <li>Locate and update the h2 element:
+        <ul>
+            <li>assign a class of "center-inline" to the h2 element to center the text</li>
+            <li>additionally, assign and id of "gallery"&nbsp;</li>
+            <li>Change the h2 text from "Classes" to "Gallery"</li>
+        </ul>
+    </li>
+    <li>Leave the contact information intact at the bottom of the page</li>
+    <li>Save the file and keep it open</li>
+    <li style="list-style-type: none;"></li>
+</ul>
+<h3>5) Add gallery thumbnails into columns</h3>
+<p>Review the <a href="https://adh.scf.edu/webclass/abtk/project/gundamconnect/gallery.html" target="_blank" rel="noopener"><strong>example gallery page</strong></a>, this is an interactive gallery created by a previous student using a CSS gallery tutorial. This gallery works by using ID tags, the "target" pseudo class, and the display: none and display:block properties to show and hide lightbox images depending on which ID anchor is clicked.</p>
+<h4>5.a.) Remove the yoga classes content from the page</h4>
+<p>
+    <span style="font-size: 1rem;">Remove the h3 and paragraph elements from each of the columns, leaving the divs with row and col-third classes intact along with their respective closing div tags</span>
+</p>
+<ul>
+    <li>
+        <span style="font-size: 1rem;">The structure of each row should be</span>
+    </li>
+</ul>
+<pre>&lt;div class="row"&gt;<br />&nbsp; &nbsp; &lt;div class="col-third"&gt;<br />&nbsp; &nbsp; &lt;/div&gt;<br /><br />&nbsp; &nbsp; &lt;div class="col-third"&gt;<br />&nbsp; &nbsp; &lt;/div&gt;<br /><br />&nbsp; &nbsp; &lt;div class="col-third"&gt;<br />&nbsp; &nbsp; &lt;/div&gt;<br />&lt;/div&gt; &lt;!-- row closing tag --&gt;</pre>
+<h4>5.b.) Next, add&nbsp;<strong>only the thumbnails</strong> to the page using rows and the 1/3 column setup&nbsp;</h4>
+<p>We will add the larger lightbox images in a later step. Add the first thumbnail and descriptive paragraph</p>
+<div>
+    <ul>
+        <li>Then, add the below code to the first column div to add the first thumbnail image with link and paragraph description.&nbsp;</li>
+    </ul>
+</div>
+<pre>&lt;!-- thumbnail image wrapped in a link --&gt;<br />&lt;a href="#img1"&gt;<br />    &lt;img src="images/gallery/balance-beach-thumb.jpg" alt="lady balancing at the sea - thumbnail" class="thumb"&gt;<br />&lt;/a&gt;<br />    &lt;p class="center-inline"&gt;Find your Inner Light&lt;/p&gt;<br /><br /></pre>
+<p>Add the other thumbnails to complete the first row and then make a second row&nbsp;</p>
+<ul>
+    <li>Once you verify the image is visible, copy and paste the code into the two remaining columns in the row and update the thumbnail images and alt tags accordingly
+        <ul>
+            <li>Make sure you update the href links and IDs. The first image should link to #img1, the second image should link to #img2, etc.&nbsp;</li>
+            <li>Also make sure you update the paragraph description as per the image above.&nbsp;</li>
+        </ul>
+    </li>
+    <li>After filling the first row with three images, select, copy and paste the entire row to create a second row
+        <ul>
+            <li>Make sure you select the row's opening and closing div tags before copying</li>
+        </ul>
+        <ul>
+            <li>Paste the copied row into the page</li>
+        </ul>
+    </li>
+    <li>Update the thumbnails for the remaining 3 images as appropriate, note that the last image is a thumbnail for a video link, but you can still link the href to #img6</li>
+    <li>Leave the contact information intact at the bottom of the main content area</li>
+</ul>
+<h3>6) Update the CSS</h3>
+<p>Before adding the lightbox images to the page, we'll want to implement the CSS that hides the lightbox and larger images until their :target pseudo class is activated. We'll also add a few other style updates.&nbsp;</p>
+<ul>
+    <li>Open your yoga.css file in a text editor</li>
+</ul>
+<h4>
+    <span style="font-size: 16pt;">6.a.) Add lightbox styles</span>
+</h4>
+<div style="padding: 20px; background-color: #ebf5fb;">
+    <figure>
+        <img src="https://i.imgur.com/WB40Hnp.png" alt="Gallery page lightbox image" width="314" height="251" />
+        <figcaption>The lightbox is the dark area that will cover the web page when displaying the full-sized image.</figcaption>
+    </figure>
+</div>
+<p>We'll want our lightbox to remain hidden until the user clicks on an image, so we're going to set styles to display:none when the page first loads. We also want to make sure the lightbox covers the entire page and is positioned above all the other content in the page.</p>
+<p>Add the below styles to your CSS file in the desktop section (BEFORE the media queries)</p>
+<pre><br />.lightbox {<br /><br />    /** lightbox does not display initially **/<br />    display: none;<br /><br />    /** Position and style of lightbox. It covers all of the page starting at the top left corner **/<br />    position: fixed;<br />    width: 100%;<br />    height: 100%;<br />    text-align: center;<br />    top: 0;<br />    left: 0;<br /><br />    /** Places the lightbox above all other content **/<br />    z-index: 999;<br /><br />    /** Adds a black background at 80% opacity **/<br />    background: rgba(0,0,0,0.8);<br />}</pre>
+<p>
+    <span style="font-size: 12pt;">Save your file.&nbsp;</span>
+</p>
+<h4>
+    <span style="font-size: 16pt;">6.b.) Style the lightbox content</span>
+</h4>
+<p>We want our images and the video to display nicely in the lightbox, even if they are too large for the screen so we'll add some styles to make sure it fits to the viewport and has some space at the top.</p>
+<pre>.lightbox img {<br />    max-width: 75%;<br />    margin-top: 2%;<br />}<br /><br />.lightbox iframe {<br />    /** Adds a top margin for the YouTube iFrame **/<br />    margin-top: 15%;<br />}<br /><br /></pre>
+<p>
+    <span style="font-size: 12pt;">Save your file.&nbsp;</span>
+</p>
+<h4>
+    <span style="font-size: 16pt;">6.c.) Style the pseudo classes</span>
+</h4>
+<p>
+    <span style="font-size: 12pt;">Here we use the :target pseudo class to show the lightbox and image when its ID is selected--when the appropriate thumbnail is clicked or tapped. We also remove the default browser image outline.</span>
+</p>
+<pre><br />.lightbox:target {<br />    display: block;<br />    transition: .5s ease;<br />    outline: none;<br />}</pre>
+<p>
+    <span style="font-size: 12pt;">We'll also use use the :hover pseudo class to give some interaction to the thumbnails, this will reduce the image opacity when hovering over them.&nbsp;</span>
+</p>
+<pre>.thumb:hover {<br />    opacity: .8;<br />    transition: .1s ease;<br />}<br /><br /></pre>
+<p>Save your file.&nbsp;</p>
+<h3>7) Add the lightbox content to the gallery page</h3>
+<div>Edit the gallery page html to add the lightbox content to the page.</div>
+<h4>7.a.) Add the first lightbox image to the page.&nbsp;</h4>
+<ul>
+    <li>You can copy and paste the code below to add the first lightbox image below the first paragraph description.</li>
+    <li>You will be adding this full sized image wrapped in a link inside the first column after the thumbnail link and descriptor paragraph.&nbsp;</li>
+    <li>Remember that the lightbox class is set to "display: none" so you should not see this content being added to the page initially.</li>
+</ul>
+<pre>&lt;a href="#gallery" class="lightbox" id="img1"&gt;<br />    &lt;img src="images/gallery/balance-beach.jpg" alt="lady balancing at the sea" width="auto"&gt;<br />&lt;/a&gt;</pre>
+<p>At this point, save your file and open the gallery page in a web browser. A click on the first image should result in the full-sized image opening in a lightbox. A second click should result in the image being closed (because it is no longer the :target).&nbsp;</p>
+<h4>7.b.) Add the rest of the photos images to the page.&nbsp;</h4>
+<ul>
+    <li>You will be adding four more full sized lightbox images to the page after each thumbnail
+        <ul>
+            <li>The video for the last thumbnail will be added in the next step.&nbsp;</li>
+        </ul>
+    </li>
+    <li>After each thumbnail, add the appropriate anchor tag and full size image
+        <ul>
+            <li>Update the ID of each anchor tag to the correct ID, eg. id="img2", id="img3" etc.&nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<h4>7.c.) Embed the YouTube video into a lightbox</h4>
+<p>Finally, we'll be adding the video content to the page. We will do this using an iframe embed provided by YouTube. This method can be used for most YouTube videos videos. From the video playback screen, you can find the embed code by selecting the "share" link and then selecting the (&lt; &gt;) embed icon.&nbsp;</p>
+<ul>
+    <li>Copy the below code and paste it below the paragraph to add the iframe to the lightbox
+        <ul>
+            <li>Note that because we are not using a javascript method for adding content to the page, the video does not stop playing automatically when we close the lightbox. A Javascript solution would actually remove the video content from the page on click, while our method only hides it. Because of this you have to manually pause the video before clicking out of the lightbox.&nbsp;</li>
+            <li>If you are using Dreamweaver you may note that adding this iframe links multiple javascript files to the page, this is script that Google adds when you embed a YouTube video.&nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<pre>&lt;a href="#gallery" class="lightbox" id="img6"&gt;<br />    &lt;iframe width="425" height="275" src="https://www.youtube.com/embed/v7AYKMP6rOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;<br />&lt;/a&gt;</pre>
+<ul>
+    <li>Save your file and verify that the video opens when clicking the thumbnail and plays as expected.&nbsp;</li>
+</ul>
+<h3>8) Check that all pages and links work as expected and upload your yoga8 folder to the server and submit your assignment</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
