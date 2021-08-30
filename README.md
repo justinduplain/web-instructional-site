@@ -2,7 +2,7 @@
 
 This site was created to teach my web design students about responsive web page design, media queries, floats and some advanced HTML5 and CSS3 concepts.
 
-##Overview
+## Overview
 - Adapted the text assignment and website to include a more modern layout with a two and three-column framework.
 - I provided detailed instructions for students on several topics:
   - How to set up media queries and several breakpoints, how to work within a responsive CSS framework
