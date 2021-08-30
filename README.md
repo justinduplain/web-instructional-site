@@ -1,6 +1,6 @@
 # Web Design and Development Instructional Site
 
-This site was created to teach my web design students about responsive web page design, media queries, floats and some advanced HTML5 and CSS3 concepts.
+This site was created to teach my web design students about responsive web page design, media queries, floats, CSS interactivity, HTML5 forms, and HTML tables.
 
 ## Overview
 - Adapted the text assignment and website to include a more modern layout with a two and three-column framework.
